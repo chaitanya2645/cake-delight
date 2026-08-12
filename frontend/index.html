@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Delight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Cake Delight</h1>
+    <p>Fresh cakes for every celebration</p>
+</header>
+
+<main>
+
+    <!-- Filters -->
+    <section class="filter-section">
+        <h2>Find Your Cake</h2>
+
+        <div class="filters">
+
+            <input
+                type="text"
+                id="name-filter"
+                placeholder="Search by cake name"
+            >
+
+            <select id="category-filter">
+                <option value="">All Categories</option>
+                <option value="Birthday">Birthday</option>
+                <option value="Celebration">Celebration</option>
+            </select>
+
+            <input
+                type="number"
+                id="min-price"
+                placeholder="Min Price"
+                min="0"
+            >
+
+            <input
+                type="number"
+                id="max-price"
+                placeholder="Max Price"
+                min="0"
+            >
+
+            <button id="filter-btn">
+                Apply Filters
+            </button>
+
+            <button id="clear-filter-btn">
+                Clear Filters
+            </button>
+
+        </div>
+    </section>
+
+    <!-- Cakes -->
+    <section class="cakes-section">
+
+        <h2>Our Cakes</h2>
+
+        <div id="cakes-container" class="cakes-container">
+            <p>Loading cakes...</p>
+        </div>
+
+    </section>
+
+    <!-- Basket -->
+    <section class="basket-section">
+
+        <h2>My Basket</h2>
+
+        <div id="basket-container">
+            <p>Your basket is empty</p>
+        </div>
+
+        <button id="checkout-btn">
+            Checkout
+        </button>
+
+        <div id="checkout-message"></div>
+
+    </section>
+
+    <!-- Ratings -->
+     <section class="rating-section">
+        <h2>Rate a Cake</h2>
+        <div id="rating-container">
+            <p>Complete an order to rate your purchased cakes.</p>
+        </div>
+     </section>
+
+     <!-- Notifications -->
+      <section class="notification-section">
+        <h2>My Notifications</h2>
+        <button id="refresh-notifications-btn">
+            Refresh Notifications
+        </button>
+        <div id="notification-container">
+            <p>Loading notifications</p>
+        </div>
+      </section>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>

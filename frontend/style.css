@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff7f8;
+    color: #333;
+}
+
+header {
+    background: #d94f70;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+h2 {
+    color: #b83255;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    background: #d94f70;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #b83255;
+}
+
+.cakes-container {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.cake-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cake-card h3 {
+    margin-top: 0;
+    color: #b83255;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.basket-section,
+.rating-section,
+.notification-section {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.basket-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.quantity-controls button {
+    padding: 6px 12px;
+}
+
+.remove-btn {
+    background: #777;
+}
+
+.remove-btn:hover {
+    background: #555;
+}
+
+.basket-total {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.basket-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#checkout-message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.rating-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.rating-card input,
+.rating-card select {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.notification-card {
+    border-left: 5px solid #d94f70;
+    background: #fff7f8;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
+.notification-card h3 {
+    margin-top: 0;
+    color: #b83255;
+}
+
+small {
+    color: #777;
+}
